@@ -1,6 +1,6 @@
-# Tasks from Rosetta Code implemented in Ballerina 
+## Tasks from Rosetta Code implemented in Ballerina
 
-See [Tasks](./tasks/README.md)
+See [Tasks](./tasks/)
 
 ## License
 
