@@ -1,0 +1,7 @@
+target
+generated
+Config.toml
+*.jar
+
+.DS_Store
+*~

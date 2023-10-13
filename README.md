@@ -1,5 +1,7 @@
 # Tasks from Rosetta Code implemented in Ballerina 
 
+See [Tasks](./tasks/README.md)
+
 ## License
 
 The code in this repository is, by default, licensed under the 
