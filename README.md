@@ -1,8 +1,21 @@
 ## Tasks from Rosetta Code implemented in Ballerina
 
-See [Tasks](./tasks/)
+### Build
 
-## License
+```bash
+# Clone the repo
+git clone https://github.com/salif/ballerina-rosettacode.git
+# Build
+bal build
+# Run
+java -jar target/bin/rosettacode.jar -- "Hello_world/Text"
+```
+
+### Tasks
+
+See [Tasks.md](./TASKS.md)
+
+### License
 
 The code in this repository is, by default, licensed under the 
 [BSL-1.0 license](./LICENSE.txt), unless specified otherwise.

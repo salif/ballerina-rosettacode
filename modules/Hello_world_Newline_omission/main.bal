@@ -1,5 +1,5 @@
 import ballerina/io;
 
 public function main() {
-	io:print("Goodbye, World!");
+    io:print("Goodbye, World!");
 }

@@ -1,0 +1,9 @@
+[package]
+org = "ballet"
+name = "rosettacode"
+version = "0.1.0"
+distribution = "2201.8.1"
+
+[build-options]
+observabilityIncluded = false
+offline = true
