@@ -2,6 +2,7 @@ import rosettacode.Hello_world_Newline_omission;
 import rosettacode.Hello_world_Text;
 import rosettacode.Loops_Break;
 import rosettacode.Loops_Foreach;
+import rosettacode.Loops_Infinite;
 import rosettacode.Loops_While;
 
 import ballerina/io;
@@ -13,11 +14,12 @@ public type func_err function () returns error?;
 public type func func_args|func_err;
 
 public final map<func> tasks = {
-    "Hello_world/Text": Hello_world_Text:main,
     "Hello_world/Newline_omission": Hello_world_Newline_omission:main,
+    "Hello_world/Text": Hello_world_Text:main,
+    "Loops/Break": Loops_Break:main,
     "Loops/Foreach": Loops_Foreach:main,
-    "Loops/While": Loops_While:main,
-    "Loops/Break": Loops_Break:main
+    "Loops/Infinite": Loops_Infinite:main,
+    "Loops/While": Loops_While:main
 };
 
 function print_tasks() {

@@ -20,6 +20,7 @@ java -jar target/bin/rosettacode.jar -- "Hello_world/Text"
 | `Loops/Foreach` | [Loops/Foreach](https://www.rosettacode.org/wiki/Loops/Foreach) | [code](/modules/Loops_Foreach/main.bal) |
 | `Loops/While` | [Loops/While](https://www.rosettacode.org/wiki/Loops/While) | [code](/modules/Loops_While/main.bal) |
 | `Loops/Break` | [Loops/Break](https://www.rosettacode.org/wiki/Loops/Break) | [code](/modules/Loops_Break/main.bal) |
+| `Loops/Infinite` | [Loops/Infinite](https://www.rosettacode.org/wiki/Loops/Infinite) | [code](/modules/Loops_Infinite/main.bal) |
 
 
 ### License

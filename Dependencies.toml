@@ -89,6 +89,7 @@ modules = [
 	{org = "ballet", packageName = "rosettacode", moduleName = "rosettacode.Hello_world_Text"},
 	{org = "ballet", packageName = "rosettacode", moduleName = "rosettacode.Loops_Break"},
 	{org = "ballet", packageName = "rosettacode", moduleName = "rosettacode.Loops_Foreach"},
+	{org = "ballet", packageName = "rosettacode", moduleName = "rosettacode.Loops_Infinite"},
 	{org = "ballet", packageName = "rosettacode", moduleName = "rosettacode.Loops_While"}
 ]
 
