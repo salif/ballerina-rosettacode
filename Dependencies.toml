@@ -43,6 +43,18 @@ dependencies = [
 
 [[package]]
 org = "ballerina"
+name = "random"
+version = "1.5.0"
+dependencies = [
+	{org = "ballerina", name = "jballerina.java"},
+	{org = "ballerina", name = "time"}
+]
+modules = [
+	{org = "ballerina", packageName = "random", moduleName = "random"}
+]
+
+[[package]]
+org = "ballerina"
 name = "test"
 version = "0.0.0"
 scope = "testOnly"
@@ -55,17 +67,27 @@ modules = [
 ]
 
 [[package]]
+org = "ballerina"
+name = "time"
+version = "2.4.0"
+dependencies = [
+	{org = "ballerina", name = "jballerina.java"}
+]
+
+[[package]]
 org = "ballet"
 name = "rosettacode"
 version = "0.1.0"
 dependencies = [
 	{org = "ballerina", name = "io"},
+	{org = "ballerina", name = "random"},
 	{org = "ballerina", name = "test"}
 ]
 modules = [
 	{org = "ballet", packageName = "rosettacode", moduleName = "rosettacode"},
 	{org = "ballet", packageName = "rosettacode", moduleName = "rosettacode.Hello_world_Newline_omission"},
 	{org = "ballet", packageName = "rosettacode", moduleName = "rosettacode.Hello_world_Text"},
+	{org = "ballet", packageName = "rosettacode", moduleName = "rosettacode.Loops_Break"},
 	{org = "ballet", packageName = "rosettacode", moduleName = "rosettacode.Loops_Foreach"},
 	{org = "ballet", packageName = "rosettacode", moduleName = "rosettacode.Loops_While"}
 ]

@@ -19,6 +19,7 @@ java -jar target/bin/rosettacode.jar -- "Hello_world/Text"
 | `Hello_world/Newline_omission` | [Hello world/Newline omission](https://www.rosettacode.org/wiki/Hello_world/Newline_omission) | [code](/modules/Hello_world_Newline_omission/main.bal) |
 | `Loops/Foreach` | [Loops/Foreach](https://www.rosettacode.org/wiki/Loops/Foreach) | [code](/modules/Loops_Foreach/main.bal) |
 | `Loops/While` | [Loops/While](https://www.rosettacode.org/wiki/Loops/While) | [code](/modules/Loops_While/main.bal) |
+| `Loops/Break` | [Loops/Break](https://www.rosettacode.org/wiki/Loops/Break) | [code](/modules/Loops_Break/main.bal) |
 
 
 ### License
