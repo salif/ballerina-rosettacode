@@ -13,7 +13,13 @@ java -jar target/bin/rosettacode.jar -- "Hello_world/Text"
 
 ### Tasks
 
-See [Tasks.md](./TASKS.md)
+| name | task | source code |
+| :--- | :--- | :--- |
+| `Hello_world/Text` | [Hello world/Text](https://www.rosettacode.org/wiki/Hello_world/Text) | [code](/modules/Hello_world_Text/main.bal) |
+| `Hello_world/Newline_omission` | [Hello world/Newline omission](https://www.rosettacode.org/wiki/Hello_world/Newline_omission) | [code](/modules/Hello_world_Newline_omission/main.bal) |
+| `Loops/Foreach` | [Loops/Foreach](https://www.rosettacode.org/wiki/Loops/Foreach) | [code](/modules/Loops_Foreach/main.bal) |
+| `Loops/While` | [Loops/While](https://www.rosettacode.org/wiki/Loops/While) | [code](/modules/Loops_While/main.bal) |
+
 
 ### License
 

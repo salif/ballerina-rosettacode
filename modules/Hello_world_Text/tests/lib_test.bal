@@ -12,6 +12,7 @@ function beforeSuiteFunc() {
 
 @test:Config {}
 function testFunction() {
+    // TODO add tests
     main();
 }
 

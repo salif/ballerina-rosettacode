@@ -65,6 +65,8 @@ dependencies = [
 modules = [
 	{org = "ballet", packageName = "rosettacode", moduleName = "rosettacode"},
 	{org = "ballet", packageName = "rosettacode", moduleName = "rosettacode.Hello_world_Newline_omission"},
-	{org = "ballet", packageName = "rosettacode", moduleName = "rosettacode.Hello_world_Text"}
+	{org = "ballet", packageName = "rosettacode", moduleName = "rosettacode.Hello_world_Text"},
+	{org = "ballet", packageName = "rosettacode", moduleName = "rosettacode.Loops_Foreach"},
+	{org = "ballet", packageName = "rosettacode", moduleName = "rosettacode.Loops_While"}
 ]
 

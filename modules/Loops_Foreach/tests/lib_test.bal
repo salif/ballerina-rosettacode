@@ -13,7 +13,7 @@ function beforeSuiteFunc() {
 @test:Config {}
 function testFunction() {
     // TODO add tests
-    main();
+    main(["a", "b", "c"]);
 }
 
 // After Suite Function
