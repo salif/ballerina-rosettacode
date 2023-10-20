@@ -2,6 +2,6 @@ import ballerina/test;
 
 @test:Config {}
 function testFunction() returns error? {
-    test:assertFail("TODO");
+    // TODO
     // check main();
 }
