@@ -1,24 +1,22 @@
-import ballerina/io;
 import ballerina/test;
+import rosettacode.tests;
+import ballerina/io;
 
-// Before Suite Function
-
-@test:BeforeSuite
-function beforeSuiteFunc() {
-    io:println("I'm the before suite function!");
+@test:Mock {
+    moduleName: "ballerina/io",
+    functionName: "print"
 }
+final test:MockFunction printMockFn = new ();
 
-// Test function
+final tests:Output output = new ();
+
+function printFn(io:Printable... values) {
+    output.print(...values);
+}
 
 @test:Config {}
-function testFunction() {
-    // TODO add tests
+function test_Hello_world_Newline_omission() {
+    test:when(printMockFn).call("printFn");
     main();
-}
-
-// After Suite Function
-
-@test:AfterSuite
-function afterSuiteFunc() {
-    io:println("I'm the after suite function!");
+    test:assertEquals(output.output, "Goodbye, World!");
 }
