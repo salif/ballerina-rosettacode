@@ -1,24 +1,23 @@
+import rosettacode.tests;
+
 import ballerina/io;
 import ballerina/test;
 
-// Before Suite Function
-
-@test:BeforeSuite
-function beforeSuiteFunc() {
-    io:println("I'm the before suite function!");
+@test:Mock {
+    moduleName: "ballerina/io",
+    functionName: "println"
 }
+final test:MockFunction printlnMockFn = new ();
 
-// Test function
+final tests:Output output = new ();
+
+function printlnFn(io:Printable... values) {
+    output.println(...values);
+}
 
 @test:Config {}
-function testFunction() {
-    // TODO add tests
+function test_Loops_Foreach() {
+    test:when(printlnMockFn).call("printlnFn");
     main(["a", "b", "c"]);
-}
-
-// After Suite Function
-
-@test:AfterSuite
-function afterSuiteFunc() {
-    io:println("I'm the after suite function!");
+    test:assertEquals(output.output, "a\nb\nc\n");
 }

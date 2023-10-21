@@ -1,24 +1,40 @@
+import rosettacode.tests;
+
 import ballerina/io;
+import ballerina/random;
 import ballerina/test;
 
-// Before Suite Function
+@test:Mock {
+    moduleName: "ballerina/io",
+    functionName: "println"
+}
+final test:MockFunction printlnMockFn = new ();
 
-@test:BeforeSuite
-function beforeSuiteFunc() {
-    io:println("I'm the before suite function!");
+@test:Mock {
+    moduleName: "ballerina/random",
+    functionName: "createIntInRange"
+}
+final test:MockFunction createIntInRangeMockFn = new ();
+//
+
+final tests:Output output = new ();
+
+function printlnFn(io:Printable... values) {
+    output.println(...values);
 }
 
-// Test function
+int i = 0;
+const int[] randomNumbers = [0, 1, 10, 3, 4, 10];
+
+function createIntInRangeFn(int startRange, int endRange) returns int|random:Error {
+    i += 1;
+    return randomNumbers[i];
+}
 
 @test:Config {}
-function testFunction() returns error? {
-    // TODO add tests
+function test_Loops_Break() returns error? {
+    test:when(printlnMockFn).call("printlnFn");
+    test:when(createIntInRangeMockFn).call("createIntInRangeFn");
     check main();
-}
-
-// After Suite Function
-
-@test:AfterSuite
-function afterSuiteFunc() {
-    io:println("I'm the after suite function!");
+    test:assertEquals(output.output, "1\n10\n3\n4\n10\n");
 }

@@ -5,7 +5,7 @@
 
 [ballerina]
 dependencies-toml-version = "2"
-distribution-version = "2201.8.1"
+distribution-version = "2201.8.2"
 
 [[package]]
 org = "ballerina"
@@ -90,6 +90,7 @@ modules = [
 	{org = "ballet", packageName = "rosettacode", moduleName = "rosettacode.Loops_Break"},
 	{org = "ballet", packageName = "rosettacode", moduleName = "rosettacode.Loops_Foreach"},
 	{org = "ballet", packageName = "rosettacode", moduleName = "rosettacode.Loops_Infinite"},
-	{org = "ballet", packageName = "rosettacode", moduleName = "rosettacode.Loops_While"}
+	{org = "ballet", packageName = "rosettacode", moduleName = "rosettacode.Loops_While"},
+	{org = "ballet", packageName = "rosettacode", moduleName = "rosettacode.tests"}
 ]
 
