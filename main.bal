@@ -7,11 +7,11 @@ import rosettacode.Loops_While;
 
 import ballerina/io;
 
-public type func_args function (string[] args) returns error?;
+public type funcArgs function (string[] args) returns error?;
 
-public type func_err function () returns error?;
+public type funcErr function () returns error?;
 
-public type func func_args|func_err;
+public type func funcArgs|funcErr;
 
 public final map<func> tasks = {
     "Hello_world/Newline_omission": Hello_world_Newline_omission:main,
@@ -22,26 +22,26 @@ public final map<func> tasks = {
     "Loops/While": Loops_While:main
 };
 
-function print_tasks() {
+function printTasks() {
     io:println("Tasks:\n");
-    tasks.keys().forEach(function(string tn) {
-        io:println(tn);
+    tasks.keys().forEach(function(string taskName) {
+        io:println(taskName);
     });
     io:println("\nPass the task name as an argument!");
 }
 
-public function main(string[] task_names = []) returns error? {
-    if task_names.length() == 0 {
-        print_tasks();
+public function main(string[] taskNames = []) returns error? {
+    if taskNames.length() == 0 {
+        printTasks();
     } else {
-        foreach string task_name in task_names {
-            final func? fn = tasks[task_name];
-            if fn is func_args {
+        foreach string taskName in taskNames {
+            final func? fn = tasks[taskName];
+            if fn is funcArgs {
                 check fn(tasks.keys());
-            } else if fn is func_err {
+            } else if fn is funcErr {
                 check fn();
             } else {
-                return error(string `Task "${task_name}" not found.`);
+                return error(string `Task "${taskName}" not found.`);
             }
         }
     }

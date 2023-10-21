@@ -1,5 +1,3 @@
-Prints "Hello, World!" with a hello function.
-[//]: # (above is the package summary)
+Tasks from Rosetta Code implemented in Ballerina.
 
 # Package Overview
-Prints "Hello, World!" as the output to the command line using a hello function.

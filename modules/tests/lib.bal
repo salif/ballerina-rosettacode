@@ -1,7 +1,5 @@
 import ballerina/io;
 
-public type MockPrintFn function (io:Printable... values);
-
 public class Output {
     public string output;
 
