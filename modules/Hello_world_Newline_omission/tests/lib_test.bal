@@ -1,6 +1,7 @@
-import ballerina/test;
 import rosettacode.tests;
+
 import ballerina/io;
+import ballerina/test;
 
 @test:Mock {
     moduleName: "ballerina/io",
