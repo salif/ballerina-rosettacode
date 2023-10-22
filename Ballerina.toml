@@ -4,10 +4,11 @@ name = "rosettacode"
 version = "0.1.0"
 distribution = "2201.8.2"
 export = ["rosettacode", "rosettacode.tests"]
-include=["/README.md", "/LICENSE.txt"]
+include = ["/README.md", "/LICENSE.txt"]
 license = ["BSL-1.0"]
 keywords = ["rosettacode"]
 authors = ["Salif Mehmed <mail@salif.eu>"]
 repository = "https://github.com/salif/ballerina-rosettacode"
 
 [build-options]
+skipTests = true

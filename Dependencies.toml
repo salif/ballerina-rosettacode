@@ -85,6 +85,7 @@ dependencies = [
 ]
 modules = [
 	{org = "ballet", packageName = "rosettacode", moduleName = "rosettacode"},
+	{org = "ballet", packageName = "rosettacode", moduleName = "rosettacode.Fibonacci_sequence"},
 	{org = "ballet", packageName = "rosettacode", moduleName = "rosettacode.Hello_world_Newline_omission"},
 	{org = "ballet", packageName = "rosettacode", moduleName = "rosettacode.Hello_world_Text"},
 	{org = "ballet", packageName = "rosettacode", moduleName = "rosettacode.Loops_Break"},

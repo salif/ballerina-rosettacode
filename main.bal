@@ -1,3 +1,4 @@
+import rosettacode.Fibonacci_sequence;
 import rosettacode.Hello_world_Newline_omission;
 import rosettacode.Hello_world_Text;
 import rosettacode.Loops_Break;
@@ -16,6 +17,7 @@ public type func funcArgs|funcErr;
 
 # Contains main functions of implemented tasks.
 public final map<func> tasks = {
+    "Fibonacci_sequence": Fibonacci_sequence:main,
     "Hello_world/Newline_omission": Hello_world_Newline_omission:main,
     "Hello_world/Text": Hello_world_Text:main,
     "Loops/Break": Loops_Break:main,
@@ -36,11 +38,12 @@ function printTasks() {
 # Runs a task.
 #
 # + taskName - A key of the `tasks` map
+# + args - Arguments for the task's main function
 # + return - An error if `taskName` is not a valid `tasks` key or the task fails
-public function runTask(string taskName) returns error? {
+public function runTask(string taskName, string[] args = []) returns error? {
     final func? fn = tasks[taskName];
     if fn is funcArgs {
-        check fn(tasks.keys());
+        check fn(args);
     } else if fn is funcErr {
         check fn();
     } else {
@@ -48,12 +51,11 @@ public function runTask(string taskName) returns error? {
     }
 }
 
-public function main(string[] taskNames = []) returns error? {
-    if taskNames.length() == 0 {
+public function main(string[] args) returns error? {
+    if args.length() == 0 {
         printTasks();
     } else {
-        foreach string taskName in taskNames {
-            check runTask(taskName);
-        }
+        string taskName = args.shift();
+        check runTask(taskName, args);
     }
 }

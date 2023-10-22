@@ -33,6 +33,7 @@ java -jar target/bin/rosettacode.jar -- "Hello_world/Text"
 | `Loops/Break` | [Loops/Break](https://www.rosettacode.org/wiki/Loops/Break) | [code](/modules/Loops_Break/main.bal) |
 | `Loops/Infinite` | [Loops/Infinite](https://www.rosettacode.org/wiki/Loops/Infinite) | [code](/modules/Loops_Infinite/main.bal) |
 | `Loops/For` | [Loops/For](https://rosettacode.org/wiki/Loops/For) | [code](/modules/Loops_For/main.bal) |
+| `Fibonacci_sequence` | [Fibonacci sequence](https://rosettacode.org/wiki/Fibonacci_sequence) | [code](/modules/Fibonacci_sequence/main.bal) |
 
 ### License
 
