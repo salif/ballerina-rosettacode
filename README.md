@@ -21,7 +21,7 @@ java -jar target/bin/rosettacode.jar -- "Hello_world/Text"
 | `Loops/While` | [Loops/While](https://www.rosettacode.org/wiki/Loops/While) | [code](/modules/Loops_While/main.bal) |
 | `Loops/Break` | [Loops/Break](https://www.rosettacode.org/wiki/Loops/Break) | [code](/modules/Loops_Break/main.bal) |
 | `Loops/Infinite` | [Loops/Infinite](https://www.rosettacode.org/wiki/Loops/Infinite) | [code](/modules/Loops_Infinite/main.bal) |
-
+| `Loops/For` | [Loops/For](https://rosettacode.org/wiki/Loops/For) | [code](/modules/Loops_For/main.bal) |
 
 ### License
 
