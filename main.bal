@@ -14,6 +14,7 @@ public type funcErr function () returns error?;
 
 public type func funcArgs|funcErr;
 
+# Contains main functions of implemented tasks.
 public final map<func> tasks = {
     "Hello_world/Newline_omission": Hello_world_Newline_omission:main,
     "Hello_world/Text": Hello_world_Text:main,
@@ -32,19 +33,27 @@ function printTasks() {
     io:println("\nPass the task name as an argument!");
 }
 
+# Runs a task.
+#
+# + taskName - A key of the `tasks` map
+# + return - An error if `taskName` is not a valid `tasks` key or the task fails
+public function runTask(string taskName) returns error? {
+    final func? fn = tasks[taskName];
+    if fn is funcArgs {
+        check fn(tasks.keys());
+    } else if fn is funcErr {
+        check fn();
+    } else {
+        return error(string `Task "${taskName}" not found.`);
+    }
+}
+
 public function main(string[] taskNames = []) returns error? {
     if taskNames.length() == 0 {
         printTasks();
     } else {
         foreach string taskName in taskNames {
-            final func? fn = tasks[taskName];
-            if fn is funcArgs {
-                check fn(tasks.keys());
-            } else if fn is funcErr {
-                check fn();
-            } else {
-                return error(string `Task "${taskName}" not found.`);
-            }
+            check runTask(taskName);
         }
     }
 }

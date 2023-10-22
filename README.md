@@ -1,5 +1,16 @@
 ## Tasks from Rosetta Code implemented in Ballerina
 
+### Links
+
+* Ballerina Central: [central.ballerina.io/ballet/rosettacode](https://central.ballerina.io/ballet/rosettacode)
+* API Docs: [lib.ballerina.io/ballet/rosettacode/latest](https://lib.ballerina.io/ballet/rosettacode/latest)
+* Source code: [github.com/salif/ballerina-rosettacode](https://github.com/salif/ballerina-rosettacode)
+* Source code: [codeberg.org/salif/ballerina-rosettacode](https://codeberg.org/salif/ballerina-rosettacode)
+* Issues (Github): [github.com/salif/ballerina-rosettacode/issues](https://github.com/salif/ballerina-rosettacode/issues)
+* Issues (Codeberg): [codeberg.org/salif/ballerina-rosettacode/issues](https://codeberg.org/salif/ballerina-rosettacode/issues)
+* Discuss (Github): [github.com/salif/ballerina-rosettacode/discussions](https://github.com/salif/ballerina-rosettacode/discussions)
+* Chat (Element/Matrix): [#salif-bal-rosettacode:mozilla.org](https://matrix.to/#/#salif-bal-rosettacode:mozilla.org)
+
 ### Build
 
 ```bash

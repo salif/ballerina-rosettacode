@@ -1,5 +1,8 @@
 import ballerina/io;
 
+# Used for mocking in tests, may panic.
+#
+# + output - The stdout
 public class Output {
     public string output;
 
